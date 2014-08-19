@@ -10,7 +10,7 @@ The data linked to from the course website represent data collected from the acc
 
 [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-## Data used
+### Data used
 
 Unpacked data is stored in `UCI HAR Dataset/` and contains:
 
@@ -24,7 +24,7 @@ Unpacked data is stored in `UCI HAR Dataset/` and contains:
 
 Other files and folders is not used
 
-## Files in this repository
+### Files in this repository
 
 `README.md` this file
 
@@ -32,6 +32,13 @@ Other files and folders is not used
 
 `CodeBook.md` describes the cleaned data in `summary_activity.txt`
 
-`run_analysis.R` R script for reading and cleaning the data. Automatically generates `summary_activity.txt`. The script reads training and testing data. Attaches subject and activity and average the mean and std columns of each variable for each activity and each subject. 
+`run_analysis.R` R script for reading and cleaning the data. Automatically generates `summary_activity.txt`. 
 
-Usage: In a folder with unpacked data in `UCI HAR Dataset/` just `source(run_analysis.R)`
+### What the script does
+
+The script reads training and testing data as one data table. Attaches the subject and activity as columns. Finally the script summaries only the mean and std columns of each variable for each activity and each subject.
+A file `summary_activity.txt` is created.
+
+#### Usage
+
+In a folder with unpacked data in `UCI HAR Dataset/` just `source(run_analysis.R)`
